@@ -14,9 +14,9 @@ include: "lookml_custom2.dashboard.lookml"
 
 
 
-# explore: mukul_derived_table_testing {
-#   sql_always_where: ${testing_created_view} >= (select usaf from weather.stations where usaf = '011920')  ;;
+explore: mukul_derived_table_testing {
+  sql_always_where: ${testing_created_view} >= (select usaf from weather.stations where usaf = '011920')  ;;
 
-# }
+}
 
-explore: stations{}
+#explore: stations{}
